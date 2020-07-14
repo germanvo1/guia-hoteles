@@ -1,0 +1,22 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "Inicio del proyecto de guia de hoteles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://germanvo1@bitbucket.org/germanvo1/guia-hoteles.git"
+  },
+  "author": "German valencia",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/germanvo1/guia-hoteles#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
+  }
+}
