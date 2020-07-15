@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device=width, inital-scale=1, shrink-to-fit=no">
     <title>Guia hoteles</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="guiahoteles.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/guiahoteles.css">
   </head>
+
   <body>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Hoteles</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
@@ -24,48 +25,85 @@
           <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
           <li class="nav-item active"><a class="nav-link" href="contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
-
         </ul>
       </div>
-    </nav>
+    </nav><!--.Navbar-->
+
     <div class="jumbotron">
       <h1>Hoteles</h1>
-    </div>
+    </div><!--.jumbotron-->
+
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Precios</li>
-        </ol>
-      </nav>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>  
+      </nav><!--.Nav/breadcrumb-->
 
-      <h2>Contáctanos </h2>
-
-      <p>Dejanos tus datos un asesor te contactara y resolvera tus dudas.</p>
+      <section><h2>Contáctanos </h2>
+        <p>Dejanos tus datos un asesor te contactara y resolvera tus dudas.</p></section>  <!--Section-->
 
       <form action="./contacto.html">
-        <fieldset>
-          <legend>Datos personales:</legend>
-          <label for="fname">Nombre(s)*:</label><br>
-          <input type="text" id="fname" name="fname" value=""><br>
-          <label for="lname">Apellidos:</label><br>
-          <input type="text" id="lname" name="lname" value=""><br>
-          <label for="fname">Teléfono*:</label><br>
-          <input type="text" id="fname" name="fname" value=""><br>
-          <label for="mail">Correo electrónico*:</label><br>
-          <input type="text" id="fname" name="fname" value="">
-          <select id="mail" name="mail">
-            <option value="gmail">@gmail.com</option>
-            <option value="yahoo">@yahoo.com</option>
-            <option value="outlook">@outlook.com</option>
-            <option value="icloud">@iCloud.com</option>
-          </select><br><br>
-          <p>Dejanos un comentario:</p>
-          <textarea name="message" rows="15" cols="40">.</textarea><br><br>
-          <button type="submit" onclick="alert('¡¡formulario enviado, pronto te contactaremos!!')">ENVIAR</button>
-        </fieldset>
-      </form>
-    </div>
+        <div class="form-row was-validated">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Nombre:</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+            <div class="invalid-feedback">
+              Ingresa un nombre
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationServer02">Correo electrónico:</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+            <div class="invalid-feedback">
+              Ingresa un correo electrónico
+            </div>
+          </div>
+        </div><!--.form-row was-validated-->
+        
+        <div class="form-row was-validated">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Teléfono:</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+            <div class="invalid-feedback">
+              Ingresa un teléfono
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationServer04">¿Como quieres que nos comuniquemos?</label>
+            <select class="custom-select is-valid" id="validationServer04" required>
+              <option selected disabled value="">Selecciona una opción...</option>
+              <option>Llamada</option>
+              <option>Correo electrónico</option>
+              <option>Otro</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationTextarea"></label>
+            <textarea  type="text" class="form-control is-valid" id="validationTextarea" placeholder="Comentario..." required ></textarea>
+            <div class="invalid-feedback">
+              Por favor dejanos un comentario.
+            </div>
+          </div>
+          <div class="form-group was-validated col-md-12 mb-3">
+            <div class="form-check">
+              <input class="form-check-input is-valid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Acepta los términos y condiciones
+              </label>
+              <div class="invalid-feedback">
+                Acepta los términos para continuar
+              </div>
+            </div>
+          </div> 
+        </div><!--.form-row was-validated-->
+        <button class="btn btn-dark" type="submit" onclick="alert('¡¡formulario enviado, pronto te contactaremos!!')">ENVIAR</button>
+      </form><!--.action="./contacto.html"-->
+    </div><!--.Container-->
 
     <footer>
       <div class="row">
@@ -96,6 +134,11 @@
           </dl>
         </div>
       </div>
-    </footer>
+    </footer><!--Footer-->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>

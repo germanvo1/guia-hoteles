@@ -1,21 +1,21 @@
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 
 
-footer{
-  padding: 15px 20px 0 100px;
+footer {
+  padding: 20px 50px 0 90px;
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: rgba(244, 228, 207, 0.36);
   text-align: center;
   
 }
-.jumbotron{
+.jumbotron {
   color: black;
-  background-image: url(img/colombia.jpg);
+  background-image: url(../img/colombia.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -23,21 +23,20 @@ footer{
   padding-top: 116px;
   padding-bottom: 64px;
 }
-.container{
+.container {
   padding: 7px 5px 5px 7px;
 
 }
-/*img{
-vertical-align: middle;
-border-style: none;*/
-}
-.footer-icon{
+
+.footer-icon {
   padding-right: 10px;
 }
-.footer-redes{
+
+.footer-redes {
   padding-top: 17px
 }
-.card img{
+
+.card img {
   height: 168px;
   width: 300px;
 }
