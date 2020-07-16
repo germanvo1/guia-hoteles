@@ -44,3 +44,8 @@ footer {
 .tab-content {
   padding-top: 10px;
 }
+.card-columns .card {
+  border: none;
+  height: 368px;
+  width: 340px;
+}

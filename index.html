@@ -12,7 +12,7 @@
 
   </head>
   <body>
-   
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark "role="navigation">
       <a class="navbar-brand" href="#">Hoteles</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
@@ -32,11 +32,11 @@
         </form>
       </div>
     </nav><!--.Barra Navegación-->
-    
+
     <div class="jumbotron">
       <h1> <strong> Hoteles</strong></h1>
     </div><!--.Jumbotron-->
-    
+
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -45,21 +45,36 @@
       </nav>
       <div class="row">
         <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="true" aria-controls="collapse1">¿Como funciona?
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="true" aria-controls="collapse2">¿Donde puedo reservar?
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="true" aria-controls="collapse3">¿Cómo pago?
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="funciona">
           <h3>¿Como funciona?</h3>
           <p>Busca hoteles deacuerdo a tu preferencia.</p>
         </div>
-        <div class="col-sm-4"> 
+        <div class="col-sm-4 collapse multi-collapse" id="reserva"> 
           <h3>¿Donde puedo reservar?</h3>
           <p>Elige la ciudad que te interese y luego realiza la reserva con tu datos.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 collapse multi-collapse" id="pago">
           <h3>¿Cómo pago?</h3>
           <p>Utilizá tu tarjeta favorita.</p>
         </div>
         <hr>
       </div><!--.row-->
-      
-      <div class="card-columns img-fluid">
+
+      <div class="card-columns ">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Hotel barcelona</h5>
@@ -132,8 +147,16 @@
             <button class="btn btn-primary"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
-      </div><!--.Card-->
-      
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Hotel barcelona</h5>
+            <h4 class="card-subtitle text-muted">España</h4>
+            <img class="img-fluid" src="img/hotel7.jpg" alt="Paisaje 1" width="300" height="168" >
+            <p class="card-text" >Hotel ubicado en el centro de barcelona a pocos metros de la playa.</p>
+            <button class="btn btn-success"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+          </div>
+        </div>
+      </div><!--.Card-columns-->
     </div><!--Container-->
 
     <footer>
@@ -166,7 +189,7 @@
         </div>
       </div>
     </footer><!--Footer-->
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
