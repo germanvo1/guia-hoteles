@@ -14,7 +14,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark "role="navigation">
-      <a class="navbar-brand" href="#">Hoteles</a>
+      <a class="navbar-brand" href="index.html">Hoteles</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,7 +81,7 @@
             <h4 class="card-subtitle text-muted">España</h4>
             <img class="img-fluid" src="img/hotel7.jpg" alt="Paisaje 1" width="300" height="168" >
             <p class="card-text" >Hotel ubicado en el centro de barcelona a pocos metros de la playa.</p>
-            <button class="btn btn-success"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -90,7 +90,7 @@
             <h4 class="card-subtitle text-muted">Argentina</h4>
             <img class="card-img" src="img/hotel2.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado en pleno centro con la mejor vista</p>
-            <button class="btn btn-warning"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -99,7 +99,7 @@
             <h4 class="card-subtitle text-muted">Arabia saudi</h4>
             <img class="card-img" src="img/hotel3.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado a 100 metros del centro con una vista preciosa.</p>
-            <button class="btn btn-warning"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -108,7 +108,7 @@
             <h4 class="card-subtitle text-muted">Brasil</h4>
             <img class="card-img" src="img/hotel4.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado en pleno centro de rio de janeiro a pocos metros de la playa.</p>
-            <button class="btn btn-warning"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -117,7 +117,7 @@
             <h4 class="card-subtitle text-muted">Alemania</h4>
             <img class="card-img" src="img/hotel5.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado a 100 metros del centro</p>
-            <button class="btn btn-primary"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -126,7 +126,7 @@
             <h4 class="card-subtitle text-muted">México</h4>
             <img class="card-img" src="img/hotel6.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado a 100 metros del centro.</p>
-            <button class="btn btn-primary"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -135,7 +135,7 @@
             <h4 class="card-subtitle text-muted">Inglaterra</h4>
             <img class="card-img" src="img/hotel1.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado a 100 metros del centro con una vista preciosa.</p>
-            <button class="btn btn-primary"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -144,7 +144,7 @@
             <h4 class="card-subtitle text-muted">Rusia</h4>
             <img class="card-img" src="img/hotel7.jpg" alt="Paisaje 1">
             <p class="card-text">Hotel ubicado a 100 metros del centro</p>
-            <button class="btn btn-primary"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
         <div class="card">
@@ -153,11 +153,110 @@
             <h4 class="card-subtitle text-muted">España</h4>
             <img class="img-fluid" src="img/hotel7.jpg" alt="Paisaje 1" width="300" height="168" >
             <p class="card-text" >Hotel ubicado en el centro de barcelona a pocos metros de la playa.</p>
-            <button class="btn btn-success"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#reservar"><span class="oi oi-cart"></span>&nbsp;&nbsp;Reservar</button>
           </div>
         </div>
       </div><!--.Card-columns-->
     </div><!--Container-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row was-validated">
+                <label for="recipient-name" class="col-sm-2 col-form-label">Tu Email:</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control is-valid" id="recipient-name" placeholder="xxxx@gmail.com" required>
+                  <div class="invalid-feedback">
+                    Ingresa un correo electrónico
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row was-validated">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control is-valid" id="inputPassword" placeholder="Password" required>
+                  <div class="invalid-feedback">
+                    Ingresa un password
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ingresar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#crearCuenta">Crear cuenta</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal -->
+
+
+    <div class="modal fade" id="crearCuenta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example">Completa los datos:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row was-validated">
+                <label for="cuenta1" class="col-sm-2 col-form-label">Tu Email:</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control is-valid" id="cuenta1" placeholder="xxxx@gmail.com" required>
+                  <div class="invalid-feedback">
+                    Ingresa un correo electrónico
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row was-validated">
+                <label for="cuenta2" class="col-sm-2 col-form-label">Nombre completo:</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control is-valid" id="cuenta2" placeholder="Nombre.." required>
+                  <div class="invalid-feedback">
+                    Ingresa tu nombre y apellidos
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row was-validated">
+                <label for="cuenta3" class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control is-valid" id="cuenta3" placeholder="Password" required>
+                  <div class="invalid-feedback">
+                    Ingresa un password
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row was-validated">
+                <label for="cuenta4" class="col-sm-2 col-form-label">Número de teléfono:</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control is-valid" id="cuenta4"  required>
+                  <div class="invalid-feedback">
+                    Ingresa tu número
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Crear cuenta</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal -->
+
+
 
     <footer>
       <div class="row">
