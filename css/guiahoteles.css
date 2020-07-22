@@ -1,18 +1,25 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 1;
 }
 
+footer #redes {
+  position: absolute;
+  left: 120px;
+}
 
-footer {
-  padding: 20px 50px 0 90px;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  background-color: rgba(244, 228, 207, 0.36);
+footer #oficce {
+  position: absolute;
+  left: 555px
+}
+
+footer #terminos {
+  position: absolute;
+  left: 899px;
   text-align: center;
-  
 }
+
 .jumbotron {
   color: black;
   background-image: url(../img/colombia.webp);
