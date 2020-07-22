@@ -1,22 +1,35 @@
 {
-  "name": "index.html",
+  "name": "guia-hoteles",
   "version": "1.0.0",
   "description": "Inicio del proyecto de guia de hoteles",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin min img/* --out-dir dist/img"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://germanvo1@bitbucket.org/germanvo1/guia-hoteles.git"
+    "url": "https://github.com/germanvo1/guia-hoteles.git"
   },
   "author": "German valencia",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/germanvo1/guia-hoteles#readme",
+  "homepage": "https://github.com/germanvo1/guia-hoteles.git#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
+    "imagemin-jpegtran": "^7.0.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "grunt": "^1.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "lite-server": "^2.4.0",
+    "node-sass": "4.5.0"
   }
 }
